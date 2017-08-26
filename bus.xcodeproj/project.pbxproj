@@ -8,17 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		5024CDDC1F520B6D0078D977 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5024CDDB1F520B6D0078D977 /* GoogleService-Info.plist */; };
+		5024CDDE1F5223B90078D977 /* ViewControllerMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5024CDDD1F5223B90078D977 /* ViewControllerMap.swift */; };
 		50E3BF911F51FA5000BED427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E3BF901F51FA5000BED427 /* AppDelegate.swift */; };
 		50E3BF931F51FA5000BED427 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E3BF921F51FA5000BED427 /* ViewController.swift */; };
 		50E3BF961F51FA5000BED427 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E3BF941F51FA5000BED427 /* Main.storyboard */; };
 		50E3BF991F51FA5000BED427 /* bus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50E3BF971F51FA5000BED427 /* bus.xcdatamodeld */; };
 		50E3BF9B1F51FA5000BED427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50E3BF9A1F51FA5000BED427 /* Assets.xcassets */; };
 		50E3BF9E1F51FA5000BED427 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E3BF9C1F51FA5000BED427 /* LaunchScreen.storyboard */; };
-		633A349758F19BA5B0E35D5B /* Pods_bus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579825C032C65C6D7930198F /* Pods_bus.framework */; };
+		F0652AAA6B9E6F6152B10B34 /* libPods-bus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 074FC798C6BE86C5B9E53C74 /* libPods-bus.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		074FC798C6BE86C5B9E53C74 /* libPods-bus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5024CDDB1F520B6D0078D977 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5024CDDD1F5223B90078D977 /* ViewControllerMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerMap.swift; sourceTree = "<group>"; };
 		50E3BF8D1F51FA5000BED427 /* bus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E3BF901F51FA5000BED427 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50E3BF921F51FA5000BED427 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,7 +30,6 @@
 		50E3BF9A1F51FA5000BED427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50E3BF9D1F51FA5000BED427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50E3BF9F1F51FA5000BED427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		579825C032C65C6D7930198F /* Pods_bus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA513994AECCDBCBF1196978 /* Pods-bus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bus/Pods-bus.debug.xcconfig"; sourceTree = "<group>"; };
 		EAC4345010500F2369A73365 /* Pods-bus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bus.release.xcconfig"; path = "Pods/Target Support Files/Pods-bus/Pods-bus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -37,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				633A349758F19BA5B0E35D5B /* Pods_bus.framework in Frameworks */,
+				F0652AAA6B9E6F6152B10B34 /* libPods-bus.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +72,7 @@
 				50E3BF941F51FA5000BED427 /* Main.storyboard */,
 				50E3BF9A1F51FA5000BED427 /* Assets.xcassets */,
 				5024CDDB1F520B6D0078D977 /* GoogleService-Info.plist */,
+				5024CDDD1F5223B90078D977 /* ViewControllerMap.swift */,
 				50E3BF9C1F51FA5000BED427 /* LaunchScreen.storyboard */,
 				50E3BF9F1F51FA5000BED427 /* Info.plist */,
 				50E3BF971F51FA5000BED427 /* bus.xcdatamodeld */,
@@ -89,7 +92,7 @@
 		FF75EACC00E719D13F5E427C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				579825C032C65C6D7930198F /* Pods_bus.framework */,
+				074FC798C6BE86C5B9E53C74 /* libPods-bus.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -190,9 +193,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-bus/Pods-bus-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -229,6 +236,7 @@
 				50E3BF931F51FA5000BED427 /* ViewController.swift in Sources */,
 				50E3BF991F51FA5000BED427 /* bus.xcdatamodeld in Sources */,
 				50E3BF911F51FA5000BED427 /* AppDelegate.swift in Sources */,
+				5024CDDE1F5223B90078D977 /* ViewControllerMap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
