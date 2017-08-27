@@ -26,10 +26,22 @@ let Cumbres = [
     Mark(name:"VIPS",  lat:25.699873, long:-100.363045),
     Mark(name:"Parque Av. Enrique C. Livas y 7a. Avenida",  lat:25.695632, long:-100.35732200000001),
     Mark(name:"Clinica Ricardo Madla",  lat:25.694334, long:-100.35471899999999),
-    Mark(name:"Tec de Mty",  lat:25.651358, long:-100.291024)
-    
+    Mark(name:"Tecnológico de Monterrey, Campus Monterrey",  lat:25.651358, long:-100.291024)
 ]
 
+let SanPedro = [
+    Mark(name:"Altamirano (Inicio)",  lat:25.656394, long:-100.40814599999999),
+    Mark(name:"Matamoros",  lat:25.653608, long:-100.39937299999997),
+    Mark(name:"Parque (parabús)",  lat:25.6536, long:-100.38936999999999),
+    Mark(name:"Río Elba",  lat:25.656772, long:-100.38460499999997),
+    Mark(name:"Río Mississipi",  lat:25.662999, long:-100.38202999999999),
+    Mark(name:"Río Amazonas (Farmacias del Ahorro)",  lat:25.664918, long:-100.38100700000001),
+    Mark(name:"Río Amazonas (Farmacia Benavides)",  lat:25.65767, long:-100.35664),
+    Mark(name:"Av. Vasconcelos y Sabino (esquina Sierra Madre)",  lat:25.652982, long:-100.355873),
+    Mark(name:"Pantepec y Tamuín",  lat:25.658462, long:-100.345257),
+    Mark(name:"Tec Milenio (Banco IXE)",  lat:25.631289, long:-100.30163800000003),
+    Mark(name:"Tecnológico de Monterrey, Campus Monterrey",  lat:25.651445, long:-100.29105400000003)
+]
 
 class YourViewController: UIViewController {
     
