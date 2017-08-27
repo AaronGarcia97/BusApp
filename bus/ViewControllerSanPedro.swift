@@ -44,9 +44,28 @@ class ViewControllerSanPedro: UIViewController {
             let marker = GMSMarker()
             marker.position = CLLocationCoordinate2D(latitude: MarkTwo.lat, longitude: MarkTwo.long)
             marker.title = MarkTwo.name
+            marker.icon = GMSMarker.markerImage(with: .blue)
             marker.snippet = "Hello from \(MarkTwo.name)"
             marker.map = mapView
         }
+        let rect = GMSMutablePath()
+        rect.add(CLLocationCoordinate2D(latitude: 25.656394, longitude: -100.40814599999999))
+        rect.add(CLLocationCoordinate2D(latitude: 25.653608, longitude:-100.39937299999997))
+        rect.add(CLLocationCoordinate2D(latitude: 25.6536, longitude: -100.38936999999999))
+        rect.add(CLLocationCoordinate2D(latitude: 25.656772, longitude: -100.38460499999997))
+        rect.add(CLLocationCoordinate2D(latitude: 25.662999, longitude:-100.38202999999999))
+        rect.add(CLLocationCoordinate2D(latitude: 25.664918, longitude:-100.38100700000001))
+        rect.add(CLLocationCoordinate2D(latitude: 25.65767, longitude:-100.35664))
+        rect.add(CLLocationCoordinate2D(latitude: 25.652982, longitude:-100.355873))
+        rect.add(CLLocationCoordinate2D(latitude: 25.658462, longitude:-100.345257))
+        rect.add(CLLocationCoordinate2D(latitude: 25.631289, longitude:-100.30163800000003))
+        rect.add(CLLocationCoordinate2D(latitude: 25.651445, longitude:-100.29105400000003))
+        let polygon = GMSPolygon(path: rect)
+        polygon.fillColor = UIColor(red: 0.25, green: 0, blue: 0, alpha: 0.05);
+        polygon.strokeColor = .black
+        polygon.strokeWidth = 2
+        polygon.map = mapView
+    
     }
     
 }

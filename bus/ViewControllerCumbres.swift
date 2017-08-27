@@ -43,9 +43,24 @@ class ViewControllerCumbres: UIViewController {
             let marker = GMSMarker()
             marker.position = CLLocationCoordinate2D(latitude: Mark.lat, longitude: Mark.long)
             marker.title = Mark.name
+            marker.icon = GMSMarker.markerImage(with: .blue)
             marker.snippet = "Hello from \(Mark.name)"
             marker.map = mapView
         }
+        let path = GMSMutablePath()
+        path.add(CLLocationCoordinate2D(latitude: 25.73121, longitude: -100.397372))
+        path.add(CLLocationCoordinate2D(latitude: 25.730125, longitude:-100.39654999999999))
+        path.add(CLLocationCoordinate2D(latitude: 25.724517, longitude: -100.39435300000002))
+        path.add(CLLocationCoordinate2D(latitude: 25.720236, longitude: -100.38858299999998))
+        path.add(CLLocationCoordinate2D(latitude: 25.716014, longitude:-100.382937))
+        path.add(CLLocationCoordinate2D(latitude: 25.712069, longitude:-100.37762099999998))
+        path.add(CLLocationCoordinate2D(latitude: 25.699873, longitude:-100.363045))
+        path.add(CLLocationCoordinate2D(latitude: 25.695632, longitude:-100.35732200000001))
+        path.add(CLLocationCoordinate2D(latitude: 25.694334, longitude:-100.35471899999999))
+        path.add(CLLocationCoordinate2D(latitude: 25.651358, longitude:-100.291024))
+        let polyline = GMSPolyline(path: path)
+        polyline.map=mapView
+        polyline.strokeColor = .blue
     }
     
 }
