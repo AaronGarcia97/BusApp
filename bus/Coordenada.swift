@@ -12,6 +12,7 @@ class Coordenada {
     init() {
         
     }
+    
     var lati = 0.0;
     var longi = 0.0;
     
