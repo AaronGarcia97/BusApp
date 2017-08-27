@@ -66,12 +66,44 @@
                     <view key="view" contentMode="scaleToFill" id="Try-eF-JXB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sz6-cT-H7j">
+                                <rect key="frame" x="280" y="452" width="95" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Set Remind"/>
+                            </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mi5-s4-kae">
+                                <rect key="frame" x="0.0" y="490" width="375" height="177"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gc0-zz-Od3">
+                                <rect key="frame" x="0.0" y="68" width="375" height="376"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="lsy-Kx-7IV" kind="embed" id="Igm-Ro-Kth"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Hke-JA-01i" appends="YES" id="K76-e6-dIv"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="ReminderSP" destination="sz6-cT-H7j" id="u4N-l8-R4T"/>
+                        <outlet property="TimePickerSP" destination="Mi5-s4-kae" id="Dr7-mn-WTa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B4Y-WN-l4J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Hke-JA-01i">
+                    <connections>
+                        <segue destination="MSX-sm-Zsj" kind="show" id="4F7-Un-BC3"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2494" y="487"/>
+            <point key="canvasLocation" x="2808.8000000000002" y="397.15142428785612"/>
         </scene>
         <!--View Controller Cumbres-->
         <scene sceneID="eAf-M4-4d8">
@@ -84,12 +116,47 @@
                     <view key="view" contentMode="scaleToFill" id="wL3-S6-aAG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9GD-VY-DtP">
+                                <rect key="frame" x="277" y="448" width="98" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Set Remind"/>
+                            </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6vO-XJ-OkY">
+                                <rect key="frame" x="0.0" y="486" width="375" height="181"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rCD-6k-pgK">
+                                <rect key="frame" x="0.0" y="95" width="375" height="345"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="Uuj-MH-wK5" kind="embed" id="caI-Ux-UHu"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="yuj-y9-f9e" appends="YES" id="At3-pe-BJ0"/>
+                        </connections>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="ReminderCumbres" destination="9GD-VY-DtP" id="B8h-Ec-JTc"/>
+                        <outlet property="TimePicker" destination="6vO-XJ-OkY" id="g1o-FJ-QJ2"/>
+                        <outlet property="TimePickerCumbres" destination="6vO-XJ-OkY" id="zHR-n5-EbO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HFl-yy-WaM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="yuj-y9-f9e">
+                    <connections>
+                        <segue destination="MSX-sm-Zsj" kind="show" id="rmo-vg-cgR"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2495" y="-313"/>
+            <point key="canvasLocation" x="2493.5999999999999" y="-313.49325337331339"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bOG-Wx-U8P">
@@ -170,6 +237,34 @@
             </objects>
             <point key="canvasLocation" x="924" y="60"/>
         </scene>
+        <!--Coordenada-->
+        <scene sceneID="8k4-VT-aa2">
+            <objects>
+                <viewController id="Uuj-MH-wK5" customClass="Coordenada" customModule="bus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hhr-2M-Afd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="345"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qkF-jh-ahZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3770" y="-314"/>
+        </scene>
+        <!--CoordenadaSP-->
+        <scene sceneID="Rlc-OA-LnJ">
+            <objects>
+                <viewController id="lsy-Kx-7IV" customClass="CoordenadaSP" customModule="bus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hrn-LF-KAF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="376"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uOh-us-75S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3564" y="353"/>
+        </scene>
     </scenes>
     <resources>
         <image name="CU-1" width="126" height="116"/>
@@ -183,4 +278,7 @@
         <image name="expreso" width="120" height="120"/>
         <image name="login" width="74" height="24"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="rmo-vg-cgR"/>
+    </inferredMetricsTieBreakers>
 </document>

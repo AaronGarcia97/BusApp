@@ -17,6 +17,7 @@
 		50E3BF991F51FA5000BED427 /* bus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50E3BF971F51FA5000BED427 /* bus.xcdatamodeld */; };
 		50E3BF9B1F51FA5000BED427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50E3BF9A1F51FA5000BED427 /* Assets.xcassets */; };
 		50E3BF9E1F51FA5000BED427 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E3BF9C1F51FA5000BED427 /* LaunchScreen.storyboard */; };
+		9653EDCF1F52EB9B00AC1371 /* CoordenadaSP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9653EDCE1F52EB9B00AC1371 /* CoordenadaSP.swift */; };
 		F0652AAA6B9E6F6152B10B34 /* libPods-bus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 074FC798C6BE86C5B9E53C74 /* libPods-bus.a */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		50E3BF9A1F51FA5000BED427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50E3BF9D1F51FA5000BED427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50E3BF9F1F51FA5000BED427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9653EDCE1F52EB9B00AC1371 /* CoordenadaSP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordenadaSP.swift; sourceTree = "<group>"; };
 		EA513994AECCDBCBF1196978 /* Pods-bus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bus/Pods-bus.debug.xcconfig"; sourceTree = "<group>"; };
 		EAC4345010500F2369A73365 /* Pods-bus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bus.release.xcconfig"; path = "Pods/Target Support Files/Pods-bus/Pods-bus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,14 +74,15 @@
 			isa = PBXGroup;
 			children = (
 				50E3BF901F51FA5000BED427 /* AppDelegate.swift */,
-				5024CDDF1F5243720078D977 /* Coordenada.swift */,
 				50E3BF921F51FA5000BED427 /* ViewController.swift */,
 				50E3BF941F51FA5000BED427 /* Main.storyboard */,
 				50E3BF9A1F51FA5000BED427 /* Assets.xcassets */,
 				5024CDDB1F520B6D0078D977 /* GoogleService-Info.plist */,
 				5024CDDD1F5223B90078D977 /* ViewControllerCumbres.swift */,
+				5024CDDF1F5243720078D977 /* Coordenada.swift */,
 				50E3BF9C1F51FA5000BED427 /* LaunchScreen.storyboard */,
 				5024CDE51F5298520078D977 /* ViewControllerSanPedro.swift */,
+				9653EDCE1F52EB9B00AC1371 /* CoordenadaSP.swift */,
 				50E3BF9F1F51FA5000BED427 /* Info.plist */,
 				50E3BF971F51FA5000BED427 /* bus.xcdatamodeld */,
 			);
@@ -245,6 +248,7 @@
 				50E3BF991F51FA5000BED427 /* bus.xcdatamodeld in Sources */,
 				50E3BF911F51FA5000BED427 /* AppDelegate.swift in Sources */,
 				5024CDE01F5243720078D977 /* Coordenada.swift in Sources */,
+				9653EDCF1F52EB9B00AC1371 /* CoordenadaSP.swift in Sources */,
 				5024CDDE1F5223B90078D977 /* ViewControllerCumbres.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
