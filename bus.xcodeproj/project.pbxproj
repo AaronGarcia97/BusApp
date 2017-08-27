@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5024CDDC1F520B6D0078D977 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5024CDDB1F520B6D0078D977 /* GoogleService-Info.plist */; };
-		5024CDDE1F5223B90078D977 /* ViewControllerMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5024CDDD1F5223B90078D977 /* ViewControllerMap.swift */; };
+		5024CDDE1F5223B90078D977 /* ViewControllerCumbres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5024CDDD1F5223B90078D977 /* ViewControllerCumbres.swift */; };
 		5024CDE01F5243720078D977 /* Coordenada.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5024CDDF1F5243720078D977 /* Coordenada.swift */; };
+		5024CDE61F5298520078D977 /* ViewControllerSanPedro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5024CDE51F5298520078D977 /* ViewControllerSanPedro.swift */; };
 		50E3BF911F51FA5000BED427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E3BF901F51FA5000BED427 /* AppDelegate.swift */; };
 		50E3BF931F51FA5000BED427 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E3BF921F51FA5000BED427 /* ViewController.swift */; };
 		50E3BF961F51FA5000BED427 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E3BF941F51FA5000BED427 /* Main.storyboard */; };
@@ -22,8 +23,9 @@
 /* Begin PBXFileReference section */
 		074FC798C6BE86C5B9E53C74 /* libPods-bus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5024CDDB1F520B6D0078D977 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		5024CDDD1F5223B90078D977 /* ViewControllerMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerMap.swift; sourceTree = "<group>"; };
+		5024CDDD1F5223B90078D977 /* ViewControllerCumbres.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerCumbres.swift; sourceTree = "<group>"; };
 		5024CDDF1F5243720078D977 /* Coordenada.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordenada.swift; sourceTree = "<group>"; };
+		5024CDE51F5298520078D977 /* ViewControllerSanPedro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSanPedro.swift; sourceTree = "<group>"; };
 		50E3BF8D1F51FA5000BED427 /* bus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E3BF901F51FA5000BED427 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50E3BF921F51FA5000BED427 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,8 +77,9 @@
 				50E3BF941F51FA5000BED427 /* Main.storyboard */,
 				50E3BF9A1F51FA5000BED427 /* Assets.xcassets */,
 				5024CDDB1F520B6D0078D977 /* GoogleService-Info.plist */,
-				5024CDDD1F5223B90078D977 /* ViewControllerMap.swift */,
+				5024CDDD1F5223B90078D977 /* ViewControllerCumbres.swift */,
 				50E3BF9C1F51FA5000BED427 /* LaunchScreen.storyboard */,
+				5024CDE51F5298520078D977 /* ViewControllerSanPedro.swift */,
 				50E3BF9F1F51FA5000BED427 /* Info.plist */,
 				50E3BF971F51FA5000BED427 /* bus.xcdatamodeld */,
 			);
@@ -236,11 +239,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5024CDE61F5298520078D977 /* ViewControllerSanPedro.swift in Sources */,
 				50E3BF931F51FA5000BED427 /* ViewController.swift in Sources */,
 				50E3BF991F51FA5000BED427 /* bus.xcdatamodeld in Sources */,
 				50E3BF911F51FA5000BED427 /* AppDelegate.swift in Sources */,
 				5024CDE01F5243720078D977 /* Coordenada.swift in Sources */,
-				5024CDDE1F5223B90078D977 /* ViewControllerMap.swift in Sources */,
+				5024CDDE1F5223B90078D977 /* ViewControllerCumbres.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
