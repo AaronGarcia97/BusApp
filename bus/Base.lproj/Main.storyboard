@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,25 +19,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="expreso" translatesAutoresizingMaskIntoConstraints="NO" id="w3R-Cb-MvN">
-                                <rect key="frame" x="46" y="28" width="264" height="258"/>
+                                <frame key="frameInset" minX="46" minY="28" width="264" height="258"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0vy-Cp-fVh">
-                                <rect key="frame" x="85" y="409" width="187" height="30"/>
+                                <frame key="frameInset" minX="85" minY="409" width="187" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.56806570150000002" green="0.57471240329999995" blue="0.58219316710000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="USERNAME" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iER-PO-hea">
-                                <rect key="frame" x="85" y="362" width="187" height="30"/>
+                                <frame key="frameInset" minX="85" minY="362" width="187" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.56806570150000002" green="0.57471240329999995" blue="0.58219316710000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKt-PO-jnX">
-                                <rect key="frame" x="46" y="432" width="313" height="71"/>
+                                <frame key="frameInset" minX="46" minY="432" width="313" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="LOGIN" image="login"/>
                                 <connections>
@@ -68,17 +65,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sz6-cT-H7j">
-                                <rect key="frame" x="280" y="452" width="95" height="30"/>
+                                <frame key="frameInset" minX="280" minY="452" width="95" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Set Remind"/>
                             </button>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mi5-s4-kae">
-                                <rect key="frame" x="0.0" y="490" width="375" height="177"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gc0-zz-Od3">
-                                <rect key="frame" x="0.0" y="68" width="375" height="376"/>
+                                <frame key="frameInset" height="376" maxY="223"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="lsy-Kx-7IV" kind="embed" id="Igm-Ro-Kth"/>
@@ -93,7 +86,6 @@
                     </view>
                     <connections>
                         <outlet property="ReminderSP" destination="sz6-cT-H7j" id="u4N-l8-R4T"/>
-                        <outlet property="TimePickerSP" destination="Mi5-s4-kae" id="Dr7-mn-WTa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B4Y-WN-l4J" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -118,17 +110,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9GD-VY-DtP">
-                                <rect key="frame" x="277" y="448" width="98" height="30"/>
+                                <frame key="frameInset" minX="277" minY="448" width="98" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Set Remind"/>
                             </button>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6vO-XJ-OkY">
-                                <rect key="frame" x="0.0" y="486" width="375" height="181"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rCD-6k-pgK">
-                                <rect key="frame" x="0.0" y="95" width="375" height="345"/>
+                                <frame key="frameInset" height="345" maxY="227"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="Uuj-MH-wK5" kind="embed" id="caI-Ux-UHu"/>
@@ -145,8 +133,6 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="ReminderCumbres" destination="9GD-VY-DtP" id="B8h-Ec-JTc"/>
-                        <outlet property="TimePicker" destination="6vO-XJ-OkY" id="g1o-FJ-QJ2"/>
-                        <outlet property="TimePickerCumbres" destination="6vO-XJ-OkY" id="zHR-n5-EbO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HFl-yy-WaM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -171,12 +157,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWC-Ys-DPM">
-                                <rect key="frame" x="118" y="348" width="138" height="136"/>
+                                <frame key="frameInset" minX="118" minY="348" width="138" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="PH"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0G-nc-kKi">
-                                <rect key="frame" x="0.0" y="348" width="138" height="136"/>
+                                <frame key="frameInset" minY="348" width="138" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="CU-1"/>
                                 <connections>
@@ -184,29 +170,29 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOr-4Z-DiP">
-                                <rect key="frame" x="237" y="348" width="138" height="136"/>
+                                <frame key="frameInset" minX="237" minY="348" width="138" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="SJ"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swN-bk-Ib0">
-                                <rect key="frame" x="118" y="469" width="138" height="136"/>
+                                <frame key="frameInset" minX="118" minY="469" width="138" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="LI"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ZONA PONIENTE (MONTERREY, ESCOBEDO, GARCIA)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Coa-xR-I8u">
-                                <rect key="frame" x="-13" y="333" width="400" height="35"/>
+                                <frame key="frameInset" minX="-13" minY="333" width="400" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adn-qq-D8L">
-                                <rect key="frame" x="118" y="204" width="138" height="136"/>
+                                <frame key="frameInset" minX="118" minY="204" width="138" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="V2"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cw2-Wu-yVl">
-                                <rect key="frame" x="0.0" y="204" width="138" height="136"/>
+                                <frame key="frameInset" minY="204" width="138" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="V1"/>
                                 <connections>
@@ -214,19 +200,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lj0-zt-rTb">
-                                <rect key="frame" x="237" y="204" width="138" height="136"/>
+                                <frame key="frameInset" minX="237" minY="204" width="138" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="V3"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ZONA VALLE (SAN PEDRO)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Itr-rM-o6C">
-                                <rect key="frame" x="-13" y="188" width="400" height="35"/>
+                                <frame key="frameInset" minX="-13" minY="188" width="400" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Z13-Tv-8Mt">
-                                <rect key="frame" x="24" y="45" width="327" height="128"/>
+                                <frame key="frameInset" minX="24" minY="45" width="327" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -241,6 +227,10 @@
         <scene sceneID="8k4-VT-aa2">
             <objects>
                 <viewController id="Uuj-MH-wK5" customClass="Coordenada" customModule="bus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OSu-Oc-5uU"/>
+                        <viewControllerLayoutGuide type="bottom" id="fDU-uO-rwn"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Hhr-2M-Afd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="345"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -249,12 +239,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qkF-jh-ahZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3770" y="-314"/>
+            <point key="canvasLocation" x="3146" y="-313"/>
         </scene>
         <!--CoordenadaSP-->
         <scene sceneID="Rlc-OA-LnJ">
             <objects>
                 <viewController id="lsy-Kx-7IV" customClass="CoordenadaSP" customModule="bus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4hG-hw-huh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uhp-mK-xKy"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hrn-LF-KAF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="376"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -279,6 +273,6 @@
         <image name="login" width="74" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rmo-vg-cgR"/>
+        <segue reference="4F7-Un-BC3"/>
     </inferredMetricsTieBreakers>
 </document>

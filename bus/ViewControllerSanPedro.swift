@@ -15,6 +15,4 @@ class ViewControllerSanPedro: UIViewController {
     
     @IBOutlet weak var ReminderSP: UIButton!
 
-    @IBOutlet weak var TimePickerSP: UIPickerView!
-    
 }

@@ -15,8 +15,5 @@ class ViewControllerCumbres: UIViewController {
     
     @IBOutlet weak var ReminderCumbres: UIButton!
     
-   
-    
-    
 }
 
