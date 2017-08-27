@@ -43,18 +43,27 @@ let SanPedro = [
     Mark(name:"Tecnológico de Monterrey, Campus Monterrey",  lat:25.651445, long:-100.29105400000003)
 ]
 
-class YourViewController: UIViewController {
+class YourViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
     
+     // create UISegmented (Cumbres/S.P) and Picker(Time)
+    @IBOutlet weak var Lugar: UISegmentedControl!
+    @IBOutlet weak var Tiempo: UIPickerView!
+    var pickerDataSource = ["05:45","07:05","08:45","11:45","13:15","14:45","16:15"] // the data for cumbres data.
     
-    // You don't need to modify the default init(nibName:bundle:) method.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        Tiempo.delegate = self  // esto es para que sea su propio delegate
+        Tiempo.dataSource = self  // para evitar el protocolo
+    }
     
+ 
     override func loadView() {
         // Create a GMSCameraPosition that tells the map to display the
         // coordinate -33.86,151.20 at zoom level 6.
         let camera = GMSCameraPosition.camera(withLatitude: 25.731619, longitude: -100.397105, zoom: 16.0)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         view = mapView
-        
+ 
         // Creates a marker in the center of the map.
         for Mark in Cumbres {
             let marker = GMSMarker()
@@ -64,6 +73,30 @@ class YourViewController: UIViewController {
             marker.map = mapView
         }
     }
-}
 
+    
+    @IBAction func IndexChanged(_ sender: Any) {
+        switch Lugar.selectedSegmentIndex{
+        //case 0 :
+            
+        //case 1 :
+        default:
+            break
+            
+        }
+    }
+    
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1 // Declaro que solo teiene un componente el view
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerDataSource.count; // Se obtiene la source
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerDataSource[row] as String // se nombra el pickerView
+    }
+}
 
