@@ -17,8 +17,12 @@
 		50E3BF991F51FA5000BED427 /* bus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50E3BF971F51FA5000BED427 /* bus.xcdatamodeld */; };
 		50E3BF9B1F51FA5000BED427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50E3BF9A1F51FA5000BED427 /* Assets.xcassets */; };
 		50E3BF9E1F51FA5000BED427 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E3BF9C1F51FA5000BED427 /* LaunchScreen.storyboard */; };
+		963F67FC1F54A3610079DCEB /* libGoogleToolboxForMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 963F67F91F54A3610079DCEB /* libGoogleToolboxForMac.a */; };
+		963F67FD1F54A3610079DCEB /* libnanopb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 963F67FA1F54A3610079DCEB /* libnanopb.a */; };
+		963F67FE1F54A3610079DCEB /* libPods-bus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 963F67FB1F54A3610079DCEB /* libPods-bus.a */; };
 		9653EDCF1F52EB9B00AC1371 /* CoordenadaSP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9653EDCE1F52EB9B00AC1371 /* CoordenadaSP.swift */; };
-		F0652AAA6B9E6F6152B10B34 /* libPods-bus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 074FC798C6BE86C5B9E53C74 /* libPods-bus.a */; };
+		96A2EDCF1F53301000F7C070 /* swiftgif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2EDCE1F53301000F7C070 /* swiftgif.swift */; };
+		96A2EDD11F53307400F7C070 /* bus.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96A2EDD01F53307400F7C070 /* bus.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +39,12 @@
 		50E3BF9A1F51FA5000BED427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50E3BF9D1F51FA5000BED427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50E3BF9F1F51FA5000BED427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		963F67F91F54A3610079DCEB /* libGoogleToolboxForMac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleToolboxForMac.a; path = "../Library/Developer/Xcode/DerivedData/bus-dagdnkifyxjveufcslceniiitfae/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/libGoogleToolboxForMac.a"; sourceTree = "<group>"; };
+		963F67FA1F54A3610079DCEB /* libnanopb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnanopb.a; path = "Pods/../build/Debug-iphoneos/nanopb/libnanopb.a"; sourceTree = "<group>"; };
+		963F67FB1F54A3610079DCEB /* libPods-bus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-bus.a"; path = "Pods/../build/Debug-iphoneos/libPods-bus.a"; sourceTree = "<group>"; };
 		9653EDCE1F52EB9B00AC1371 /* CoordenadaSP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordenadaSP.swift; sourceTree = "<group>"; };
+		96A2EDCE1F53301000F7C070 /* swiftgif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = swiftgif.swift; sourceTree = "<group>"; };
+		96A2EDD01F53307400F7C070 /* bus.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bus.gif; sourceTree = "<group>"; };
 		EA513994AECCDBCBF1196978 /* Pods-bus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bus/Pods-bus.debug.xcconfig"; sourceTree = "<group>"; };
 		EAC4345010500F2369A73365 /* Pods-bus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bus.release.xcconfig"; path = "Pods/Target Support Files/Pods-bus/Pods-bus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -45,7 +54,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0652AAA6B9E6F6152B10B34 /* libPods-bus.a in Frameworks */,
+				963F67FC1F54A3610079DCEB /* libGoogleToolboxForMac.a in Frameworks */,
+				963F67FD1F54A3610079DCEB /* libnanopb.a in Frameworks */,
+				963F67FE1F54A3610079DCEB /* libPods-bus.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,8 @@
 				50E3BF941F51FA5000BED427 /* Main.storyboard */,
 				50E3BF9A1F51FA5000BED427 /* Assets.xcassets */,
 				5024CDDB1F520B6D0078D977 /* GoogleService-Info.plist */,
+				96A2EDCE1F53301000F7C070 /* swiftgif.swift */,
+				96A2EDD01F53307400F7C070 /* bus.gif */,
 				5024CDDD1F5223B90078D977 /* ViewControllerCumbres.swift */,
 				5024CDDF1F5243720078D977 /* Coordenada.swift */,
 				50E3BF9C1F51FA5000BED427 /* LaunchScreen.storyboard */,
@@ -101,6 +114,9 @@
 		FF75EACC00E719D13F5E427C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				963F67F91F54A3610079DCEB /* libGoogleToolboxForMac.a */,
+				963F67FA1F54A3610079DCEB /* libnanopb.a */,
+				963F67FB1F54A3610079DCEB /* libPods-bus.a */,
 				074FC798C6BE86C5B9E53C74 /* libPods-bus.a */,
 			);
 			name = Frameworks;
@@ -171,6 +187,7 @@
 			files = (
 				50E3BF9E1F51FA5000BED427 /* LaunchScreen.storyboard in Resources */,
 				5024CDDC1F520B6D0078D977 /* GoogleService-Info.plist in Resources */,
+				96A2EDD11F53307400F7C070 /* bus.gif in Resources */,
 				50E3BF9B1F51FA5000BED427 /* Assets.xcassets in Resources */,
 				50E3BF961F51FA5000BED427 /* Main.storyboard in Resources */,
 			);
@@ -247,6 +264,7 @@
 				50E3BF931F51FA5000BED427 /* ViewController.swift in Sources */,
 				50E3BF991F51FA5000BED427 /* bus.xcdatamodeld in Sources */,
 				50E3BF911F51FA5000BED427 /* AppDelegate.swift in Sources */,
+				96A2EDCF1F53301000F7C070 /* swiftgif.swift in Sources */,
 				5024CDE01F5243720078D977 /* Coordenada.swift in Sources */,
 				9653EDCF1F52EB9B00AC1371 /* CoordenadaSP.swift in Sources */,
 				5024CDDE1F5223B90078D977 /* ViewControllerCumbres.swift in Sources */,
@@ -299,6 +317,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -349,6 +368,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -377,6 +397,11 @@
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = bus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/nanopb",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = A4RON.tavopaez;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -392,6 +417,11 @@
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = bus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/nanopb",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = A4RON.tavopaez;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;

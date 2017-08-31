@@ -10,6 +10,13 @@ import UIKit
 
 class ViewControllerCumbres: UIViewController {
     
+    let hour = Calendar.current.component(.hour, from: Date())
+    let minutes = Calendar.current.component(.minute, from: Date())
+
+    
+    @IBAction func checkTime1(_ sender: Any) {
+        print(750 - (hour*60 + minutes))
+    }
     
     @IBOutlet weak var Views: UIView!
     
